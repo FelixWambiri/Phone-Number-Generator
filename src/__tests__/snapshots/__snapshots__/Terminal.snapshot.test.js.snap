@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render with a welcome message 1`] = `
+<div
+  className="terminal"
+  name="react-console-emulator"
+  onClick={[Function]}
+  style={
+    Object {
+      "background": "linear-gradient(rgba(102,153,102,0.2), rgba(255, 255, 255, 0.3)),url(test-file-stub)",
+      "backgroundSize": "cover",
+      "borderRadius": "5px",
+      "cursor": "text",
+      "height": "100%",
+      "maxHeight": "100%",
+      "maxWidth": "100%",
+      "minHeight": "300px",
+      "minWidth": "500x",
+      "overflow": "auto",
+      "textAlign": "left",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    name="react-console-emulator__content"
+    style={
+      Object {
+        "color": "#FFFFFF",
+        "fontFamily": "monospace",
+        "fontSize": "15px",
+        "height": "100%",
+        "padding": "20px",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "lineHeight": "21px",
+          "margin": "0",
+        }
+      }
+    >
+      Welcome... :)
+    </p>
+    <p
+      style={
+        Object {
+          "lineHeight": "21px",
+          "margin": "0",
+        }
+      }
+    >
+      Type help to view a list of available commands
+    </p>
+    <div
+      name="react-console-emulator__inputArea"
+      style={
+        Object {
+          "display": "inline-flex",
+          "width": "100%",
+        }
+      }
+    >
+      <span
+        name="react-console-emulator__promptLabel"
+        style={
+          Object {
+            "color": "#EE9C34",
+            "paddingTop": "3px",
+          }
+        }
+      >
+        @phoneNumbers:~$
+      </span>
+      <input
+        autoComplete="off"
+        disabled={false}
+        name="react-console-emulator__input"
+        onKeyDown={[Function]}
+        style={
+          Object {
+            "background": "transparent",
+            "border": "0",
+            "color": "#F0BF81",
+            "flexGrow": "100",
+            "fontFamily": "monospace",
+            "fontSize": "15px",
+            "height": "22px",
+            "margin": "0",
+            "outline": "none",
+            "padding": "0 0 0 7px",
+            "width": "100%",
+          }
+        }
+        type="text"
+      />
+    </div>
+  </div>
+</div>
+`;

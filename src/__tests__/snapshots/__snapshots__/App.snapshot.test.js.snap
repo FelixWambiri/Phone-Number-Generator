@@ -1,0 +1,324 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render with all the child components being empty 1`] = `
+<div
+  className="App"
+>
+  <header>
+    <div
+      className="right-header-content"
+    >
+      <span
+        onClick={[Function]}
+      >
+        <div
+          aria-describedby={null}
+          className="icon-btn-container"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onMouseLeave={[Function]}
+          onMouseOver={[Function]}
+          onTouchEnd={[Function]}
+          onTouchStart={[Function]}
+          title="Download Numbers Generated"
+        >
+          <i
+            fill="currentColor"
+            style={
+              Object {
+                "display": "inline-block",
+              }
+            }
+          >
+            <svg
+              fill="currentColor"
+              height="80%"
+              style={
+                Object {
+                  "display": "inline-block",
+                  "verticalAlign": "middle",
+                }
+              }
+              viewBox="0 0 24 24"
+              width="80%"
+            >
+              <path
+                d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"
+              />
+            </svg>
+          </i>
+        </div>
+      </span>
+      <div
+        aria-describedby={null}
+        className="icon-btn-container"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        onTouchEnd={[Function]}
+        onTouchStart={[Function]}
+        title="Ascending Order"
+      >
+        <i
+          fill="currentColor"
+          style={
+            Object {
+              "display": "inline-block",
+            }
+          }
+        >
+          <svg
+            fill="currentColor"
+            height="80%"
+            style={
+              Object {
+                "display": "inline-block",
+                "verticalAlign": "middle",
+              }
+            }
+            viewBox="0 0 24 24"
+            width="80%"
+          >
+            <path
+              d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
+            />
+          </svg>
+        </i>
+      </div>
+      <div
+        aria-describedby={null}
+        className="icon-btn-container"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        onTouchEnd={[Function]}
+        onTouchStart={[Function]}
+        title="Descending Order"
+      >
+        <i
+          fill="currentColor"
+          style={
+            Object {
+              "display": "inline-block",
+            }
+          }
+        >
+          <svg
+            fill="currentColor"
+            height="80%"
+            style={
+              Object {
+                "display": "inline-block",
+                "verticalAlign": "middle",
+              }
+            }
+            viewBox="0 0 24 24"
+            width="80%"
+          >
+            <path
+              d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+            />
+          </svg>
+        </i>
+      </div>
+    </div>
+    <div
+      className="center-header-content"
+    >
+      <div
+        aria-describedby={null}
+        className="icon-btn-container"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        onTouchEnd={[Function]}
+        onTouchStart={[Function]}
+        title="Maximum Number"
+      >
+        <i
+          fill="currentColor"
+          style={
+            Object {
+              "display": "inline-block",
+            }
+          }
+        >
+          <svg
+            fill="currentColor"
+            height="80%"
+            style={
+              Object {
+                "display": "inline-block",
+                "verticalAlign": "middle",
+              }
+            }
+            viewBox="0 0 24 24"
+            width="80%"
+          >
+            <path
+              d="M8 11h3v10h2V11h3l-4-4-4 4zM4 3v2h16V3H4z"
+            />
+          </svg>
+        </i>
+      </div>
+      <div
+        aria-describedby={null}
+        className="icon-btn-container"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        onTouchEnd={[Function]}
+        onTouchStart={[Function]}
+        title="Minimum Number"
+      >
+        <i
+          fill="currentColor"
+          style={
+            Object {
+              "display": "inline-block",
+            }
+          }
+        >
+          <svg
+            fill="currentColor"
+            height="80%"
+            style={
+              Object {
+                "display": "inline-block",
+                "verticalAlign": "middle",
+              }
+            }
+            viewBox="0 0 24 24"
+            width="80%"
+          >
+            <path
+              d="M16 13h-3V3h-2v10H8l4 4 4-4zM4 19v2h16v-2H4z"
+            />
+          </svg>
+        </i>
+      </div>
+    </div>
+  </header>
+  <section
+    className="left-section"
+  >
+    <div
+      className="terminal"
+      name="react-console-emulator"
+      onClick={[Function]}
+      style={
+        Object {
+          "background": "linear-gradient(rgba(102,153,102,0.2), rgba(255, 255, 255, 0.3)),url(test-file-stub)",
+          "backgroundSize": "cover",
+          "borderRadius": "5px",
+          "cursor": "text",
+          "height": "100%",
+          "maxHeight": "100%",
+          "maxWidth": "100%",
+          "minHeight": "300px",
+          "minWidth": "500x",
+          "overflow": "auto",
+          "textAlign": "left",
+          "width": "100%",
+        }
+      }
+    >
+      <div
+        name="react-console-emulator__content"
+        style={
+          Object {
+            "color": "#FFFFFF",
+            "fontFamily": "monospace",
+            "fontSize": "15px",
+            "height": "100%",
+            "padding": "20px",
+          }
+        }
+      >
+        <p
+          style={
+            Object {
+              "lineHeight": "21px",
+              "margin": "0",
+            }
+          }
+        >
+          Welcome... :)
+        </p>
+        <p
+          style={
+            Object {
+              "lineHeight": "21px",
+              "margin": "0",
+            }
+          }
+        >
+          Type help to view a list of available commands
+        </p>
+        <div
+          name="react-console-emulator__inputArea"
+          style={
+            Object {
+              "display": "inline-flex",
+              "width": "100%",
+            }
+          }
+        >
+          <span
+            name="react-console-emulator__promptLabel"
+            style={
+              Object {
+                "color": "#EE9C34",
+                "paddingTop": "3px",
+              }
+            }
+          >
+            @phoneNumbers:~$
+          </span>
+          <input
+            autoComplete="off"
+            disabled={false}
+            name="react-console-emulator__input"
+            onKeyDown={[Function]}
+            style={
+              Object {
+                "background": "transparent",
+                "border": "0",
+                "color": "#F0BF81",
+                "flexGrow": "100",
+                "fontFamily": "monospace",
+                "fontSize": "15px",
+                "height": "22px",
+                "margin": "0",
+                "outline": "none",
+                "padding": "0 0 0 7px",
+                "width": "100%",
+              }
+            }
+            type="text"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className="middle-section"
+  >
+    
+    
+  </section>
+  <section
+    className="right-section"
+  >
+    <ul />
+  </section>
+</div>
+`;

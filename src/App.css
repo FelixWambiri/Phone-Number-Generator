@@ -1,33 +1,332 @@
+/*----------------------------*/
+/*BASIC SETUP*/
+/*----------------------------*/
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*----------------------------*/
+/* Main Application Container */
+/*----------------------------*/
 .App {
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(images/tech.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/*-----------------------------*/
+/* Right Section of The Header */
+/* Download, Ascending and     */
+/* Descending Buttons          */
+/*-----------------------------*/
+.right-header-content {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-top: 50px;
+  position: absolute;
+  right: 10%;
 }
 
-.App-link {
-  color: #61dafb;
+/*-----------------------------*/
+/* Center Section of The Header*/
+/* Maxmimum and Minimum number */
+/* Buttons                     */
+/*-----------------------------*/
+.center-header-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  position: absolute;
+  left: 40%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/*-----------------------------*/
+/* Common Styling for all the  */
+/* Icon Buttons                */
+/*-----------------------------*/
+.icon-btn-container {
+  width: 60px;
+  height: 60px;
+  color: #e67e22;
+  border-radius: 50%;
+  background: #fff;
+  padding-top: 5px;
+  margin-left: 50px;
+  transition: background-color 0.3s;
+}
+
+/*-----------------------------*/
+/* Styling for the first Icon  */
+/* Button in center header     */
+/* container                   */
+/*-----------------------------*/
+.center-header-content .icon-btn-container:nth-child(1) {
+  margin-left: 0;
+  margin-right: 95px;
+}
+
+/*-----------------------------*/
+/* Common Styling for all the  */
+/* Icon Buttons on Hover       */
+/*-----------------------------*/
+.icon-btn-container:hover,.icon-btn-container:active {
+  background-color: #d3d3d3;
+  cursor: pointer !important;
+}
+
+/*-----------------------------*/
+/* Common Styling for all the  */
+/* Icons on Hover              */
+/*-----------------------------*/
+.icon-btn-container:hover svg path {
+  fill: #cf6d17;
+}
+.icon-btn-container:active svg path {
+  fill: #cf6d17;
+}
+
+/*-----------------------------*/
+/* Common Styling for all the  */
+/* Sections                    */
+/*-----------------------------*/
+section {
+  position: absolute;
+  top: 20%;
+  left: 3%;
+}
+
+.left-section {
+  width: 28vw;
+  height: 50vh;
+}
+
+/*-----------------------------*/
+/* Styling for all the right   */
+/* Section                     */
+/*-----------------------------*/
+.right-section {
+  background-image: url(images/white.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 68vh;
+  width: 28vw;
+  left: 67%;
+  top: 20%;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
+  overflow-y: scroll;
+  color: #000;
+}
+
+/*--------------------------------------------------------*/
+/*Start of Styling for the list displaying numbers*/
+/*--------------------------------------------------------*/
+ul {
+  margin: 0 auto;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+ul li {
+  display: flex;
+  background: rgba(16, 16, 16, 0.9);
+  padding: 10px 20px;
+  line-height: 1.5rem;
+  border: 1px solid #e0e0e0;
+  color: #fff;
+  margin: 5px 0;
+  transition: all 0.3s linear;
+}
+
+ul li:nth-child(even) {
+  background: rgba(19, 17, 17, 0.8);
+}
+
+ul li:hover {
+  transform: scale(1.06);
+  background: #ff3772;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transform: scale(1.05);
+}
+/*--------------------------------------------------------*/
+/*End of Styling for the list displaying numbers*/
+/*--------------------------------------------------------*/
+
+/*-----------------------------*/
+/* Styling for all the middle  */
+/* Section                     */
+/*-----------------------------*/
+.middle-section {
+  top: 20%;
+  left: 33%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/*------------------------------*/
+/* Styling for all the maxmimum */
+/* and minimun number containers*/
+/* in the middleSection         */
+/*------------------------------*/
+.card-container {
+  width: 15vw;
+  height: 15vh;
+  background: rgba(255, 255, 255, 0.9);
+  margin-left: 10px;
+  font-size: 25px;
+  letter-spacing: 1px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+/*------------------------------*/
+/* Styling for all the maxmimum */
+/* and minimun number containers*/
+/* in the middleSection on Hover*/
+/*------------------------------*/
+.card-container:hover, .card-container:active {
+  transform: scale(1.06);
+  background: #ff3772;
+}
+
+/*--------------------------------------------------------*/
+/*Media Queries for different screen sizes*/
+/*--------------------------------------------------------*/
+
+/*
+  ##Device = Desktops
+  ##Screen = 1600px to higher resolution desktops
+*/
+@media (min-width: 1600px) {
+  .center-header-content {
+    left: 40%;
   }
-  to {
-    transform: rotate(360deg);
+  .middle-section {
+    left: 32%;
+  }
+  .center-header-content .icon-btn-container:nth-child(1) {
+    margin-left: 0;
+    margin-right: 215px;
+  }
+  .card-container {
+    margin-left: 30px;
+    margin-right: 40px;
+    font-size: 30px;
+  }
+  .right-section {
+    left: 70%;
+  }
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .App {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+      url(images/tech.jpg);
+  }
+  .center-header-content {
+    left: 10%;
+  }
+  .center-header-content .icon-btn-container:nth-child(1) {
+    margin-right: 0;
+  }
+  .right-header-content {
+    right: 10%;
+  }
+  .icon-btn-container {
+    width: 100px;
+    height: 100px;
+    margin-left: 75px;
+  }
+  .middle-section {
+    top: 14%;
+    left: 5%;
+  }
+  .card-container {
+    width: 42vw;
+    height: 7vh;
+    margin-left: 17px;
+    font-size: 27px;
+  }
+  .right-section {
+    top: 23%;
+    left: 50%;
+    width: 45vw;
+    font-size: 30px;
+  }
+  .left-section {
+    top: 23%;
+    width: 45vw;
+    left: 3%;
+  }
+  .left-section div {
+    font-size: 30px !important;
+  }
+  .left-section input {
+    color: rgb(238, 156, 52) !important;
+    font-size: 30px !important;
+    height: 40px !important;
+    margin-top: 0 !important;
+    padding: 0 !important;
+  }
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .App {
+    overflow-y: scroll !important;
+  }
+  .center-header-content .icon-btn-container:nth-child(1) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .icon-btn-container {
+    margin-left: 10px;
+  }
+  .right-header-content {
+    right: 5%;
+  }
+  .center-header-content {
+    left: 5%;
+  }
+  .card-container {
+    width: 85vw;
+    height: 10vh;
+    margin-bottom: 5px;
+    font-size: 15px;
+  }
+  .middle-section {
+    top: 18%;
+    left: 5%;
+    flex-direction: column;
+  }
+  .right-section {
+    top: 90%;
+    left: 3%;
+    width: 95vw;
+  }
+  .left-section {
+    top: 40%;
+    width: 95vw;
+    height: 15vh;
   }
 }
